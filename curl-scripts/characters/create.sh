@@ -1,5 +1,3 @@
-#!/bin/bash
-
 curl "http://localhost:8000/characters/" \
   --include \
   --request POST \
@@ -8,8 +6,13 @@ curl "http://localhost:8000/characters/" \
   --data '{
     "character": {
       "name": "'"${NAME}"'",
-      "color": "'"${COLOR}"'",
-      "ripe": "'"${RIPE}"'"
+      "level": "'"${LEVEL}"'",
+      "exp": "'"${EXP}"'",
+      "charClass": "'"${CHARCLASS}"'",
+      "race": "'"${RACE}"'",
+      "alignment": "'"${ALIGNMENT}"'",
+      "background": "'"${BACKGROUND}"'"
+
     }
   }'
 
