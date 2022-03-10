@@ -14,6 +14,7 @@ class Character(models.Model):
     race = models.CharField(max_length=100)
     alignment = models.CharField(max_length=100)
     background = models.CharField(max_length=300)
+    strength = models.CharField(max_length=300)
     owner = models.ForeignKey(
         get_user_model(),
         on_delete=models.CASCADE

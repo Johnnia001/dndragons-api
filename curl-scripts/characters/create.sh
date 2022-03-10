@@ -12,6 +12,7 @@ curl "http://localhost:8000/characters/" \
       "race": "'"${RACE}"'",
       "alignment": "'"${ALIGNMENT}"'",
       "background": "'"${BACKGROUND}"'"
+      "strength": "'"${STRENGTH}
 
     }
   }'
