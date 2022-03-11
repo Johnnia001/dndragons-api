@@ -15,6 +15,12 @@ class Character(models.Model):
     alignment = models.CharField(max_length=100)
     background = models.CharField(max_length=300)
     strength = models.CharField(max_length=300)
+    dexterity = models.CharField(max_length=100)
+    constitution = models.CharField(max_length=100)
+    intelligence = models.CharField(max_length=100)
+    wisdom = models.CharField(max_length=100)
+    charisma = models.CharField(max_length=100)
+    savingThrows = models.CharField(max_length=300)
     owner = models.ForeignKey(
         get_user_model(),
         on_delete=models.CASCADE
