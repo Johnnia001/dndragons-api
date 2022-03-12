@@ -20,7 +20,9 @@ class Character(models.Model):
     intelligence = models.CharField(max_length=100)
     wisdom = models.CharField(max_length=100)
     charisma = models.CharField(max_length=100)
-    savingThrows = models.JSONField()
+    prof = models.CharField(max_length=100)
+    savingThrows = models.CharField(max_length=100)
+    skills = models.CharField(max_length=300)
     owner = models.ForeignKey(
         get_user_model(),
         on_delete=models.CASCADE
