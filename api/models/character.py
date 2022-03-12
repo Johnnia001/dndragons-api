@@ -22,7 +22,7 @@ class Character(models.Model):
     charisma = models.CharField(max_length=100)
     prof = models.CharField(max_length=100)
     savingThrows = models.CharField(max_length=100)
-    skills = models.CharField(max_length=300)
+    # skills = models.CharField(max_length=300)
     owner = models.ForeignKey(
         get_user_model(),
         on_delete=models.CASCADE
